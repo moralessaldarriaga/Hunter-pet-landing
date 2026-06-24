@@ -1,9 +1,9 @@
-<section class="w-full bg-white bg-[linear-gradient(180deg,rgba(255,241,242,1)_50%,rgba(255,255,255,1)_100%)] py-20" id="benefits">
-    <div class="w-full max-w-[1280px] mx-auto px-4 flex flex-col items-center">
-        <div class="inline-flex items-center mx-auto gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl">
+<section class="w-full bg-white bg-[linear-gradient(180deg,rgba(255,241,242,1)_50%,rgba(255,255,255,1)_100%)] py-20 scroll-mt-[92.43px]" id="benefits">
+    <div class="w-full max-w-7xl mx-auto px-4 flex flex-col items-center">
+        <div class="inline-flex items-center mx-auto gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl max-[1350px]:text-sm">
             Beneficios
         </div>
-        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] leading-none">Mucho <span class="text-[#ED1C3F]">más que un GPS</span> para tu mascota</h2>
+        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] max-[1350px]:text-3xl leading-none">Mucho <span class="text-[#ED1C3F]">más que un GPS</span> para tu mascota</h2>
         <div class="mt-15 w-full grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -12,8 +12,8 @@
                     <path d="M14 15.1666C15.933 15.1666 17.5 13.5996 17.5 11.6666C17.5 9.73363 15.933 8.16663 14 8.16663C12.067 8.16663 10.5 9.73363 10.5 11.6666C10.5 13.5996 12.067 15.1666 14 15.1666Z" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Ubicación en tiempo real</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Ten la tranquilidad de saber dónde está tu mascota en todo momento.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Ubicación en tiempo real</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Ten la tranquilidad de saber dónde está tu mascota en todo momento.</p>
             </div>
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -21,8 +21,8 @@
                         <path d="M25.6666 14H22.7733C22.2634 13.9989 21.7672 14.1649 21.3606 14.4725C20.954 14.7801 20.6593 15.2124 20.5216 15.7034L17.78 25.4567C17.7623 25.5173 17.7255 25.5705 17.675 25.6084C17.6245 25.6462 17.5631 25.6667 17.5 25.6667C17.4369 25.6667 17.3755 25.6462 17.325 25.6084C17.2745 25.5705 17.2376 25.5173 17.22 25.4567L10.78 2.54337C10.7623 2.48279 10.7255 2.42957 10.675 2.39171C10.6245 2.35384 10.5631 2.33337 10.5 2.33337C10.4369 2.33337 10.3755 2.35384 10.325 2.39171C10.2745 2.42957 10.2376 2.48279 10.22 2.54337L7.47831 12.2967C7.34119 12.7857 7.04826 13.2166 6.64399 13.5241C6.23972 13.8315 5.74619 13.9986 5.23831 14H2.33331" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Seguimiento de hábitos</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Sigue sus recorridos diarios y conoce mejor sus hábitos y comportamiento.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Seguimiento de hábitos</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Sigue sus recorridos diarios y conoce mejor sus hábitos y comportamiento.</p>
             </div>
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -31,8 +31,8 @@
                         <path d="M3.80567 17.8804C3.65326 18.0474 3.55268 18.2552 3.51617 18.4783C3.47965 18.7015 3.50877 18.9304 3.59999 19.1373C3.69121 19.3442 3.84059 19.5202 4.02997 19.6438C4.21934 19.7673 4.44054 19.8332 4.66667 19.8334H23.3333C23.5594 19.8335 23.7807 19.7678 23.9702 19.6445C24.1597 19.5212 24.3092 19.3454 24.4007 19.1386C24.4922 18.9319 24.5216 18.703 24.4853 18.4798C24.4491 18.2566 24.3488 18.0488 24.1967 17.8815C22.645 16.282 21 14.5822 21 9.33337C21 7.47686 20.2625 5.69638 18.9498 4.38363C17.637 3.07087 15.8565 2.33337 14 2.33337C12.1435 2.33337 10.363 3.07087 9.05025 4.38363C7.7375 5.69638 7 7.47686 7 9.33337C7 14.5822 5.35384 16.282 3.80567 17.8804Z" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Alertas inmediatas</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Actúa rápidamente ante cualquier situación gracias a alertas en tiempo real.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Alertas inmediatas</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Actúa rápidamente ante cualquier situación gracias a alertas en tiempo real.</p>
             </div>
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -41,8 +41,8 @@
                         <path d="M10.5 14.0001L12.8333 16.3334L17.5 11.6667" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Geocercas</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Define zonas seguras y recibe notificaciones cuando salga de estas.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Geocercas</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Define zonas seguras y recibe notificaciones cuando salga de estas.</p>
             </div>
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -52,8 +52,8 @@
                         <path d="M10.5 3.77539V21.2754" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Monitoreo en la palma de tu mano</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Accede a toda la información de tu mascota desde tu celular.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Monitoreo en la palma de tu mano</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Accede a toda la información de tu mascota desde tu celular.</p>
             </div>
             <div class="p-7 bg-white rounded-3xl border border-[#F4F4F5]">
                 <div class="bg-[linear-gradient(135deg,#ED1C3F_0%,#E71B3D_7.14%,#E21A3C_14.29%,#DC193A_21.43%,#D61839_28.57%,#D11837_35.71%,#CB1735_42.86%,#C61634_50%,#C01532_57.14%,#BB1431_64.29%,#B5132F_71.43%,#B0132E_78.57%,#AB122C_85.71%,#A5112B_92.86%,#A01029_100%)] mb-5 w-14 h-14 flex items-center justify-center rounded-2xl shadow-[0px_4px_7px_-4px_#ED1C3F]">
@@ -68,8 +68,8 @@
                         <path d="M14 14V21" stroke="white" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <h4 class="font-raleway font-bold text-base text-[#18181B]">Asistencia veterinaria 24/7</h4>
-                <p class="font-inter font-normal text-sm text-[#52525C]">Accede a soporte y orientación veterinaria para tu mascota cuando más lo necesites.</p>
+                <h4 class="font-raleway font-bold text-base max-[1350px]:text-sm text-[#18181B]">Asistencia veterinaria 24/7</h4>
+                <p class="font-inter font-normal text-sm max-[1350px]:text-sm text-[#52525C]">Accede a soporte y orientación veterinaria para tu mascota cuando más lo necesites.</p>
             </div>
         </div>
     </div>

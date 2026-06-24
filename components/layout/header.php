@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="antialiased font-inter">
+<html lang="es" class="font-inter antialiased scroll-smooth" data-scroll-behavior="smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Tailwind -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
 </head>
 
 <body class="bg-white min-h-screen flex flex-col overflow-x-hidden">
-    <header class="w-full bg-white sticky top-0 z-10">
+    <header class="w-full bg-white sticky top-0 z-10 transition-all duration-300 header-scroll-shadow">
         <nav class="w-full max-w-[1280px] mx-auto px-4 py-[14px] flex items-center justify-between font-raleway font-bold text-base text-[#3F3F47]">
             <!-- Logo -->
             <a href="/">
@@ -22,9 +23,9 @@
 
             <!-- Menu -->
             <div class="hidden md:flex gap-8">
-                <a href="#product"vclass="hover:text-primary transition">Producto</a>
-                <a href="#benefits" class="hover:text-primary transition">Beneficios</a>
-                <a href="#contact" class="hover:text-primary transition">Contacto</a>
+                <a href="#product" class="hover:text-primary transition" data-enlace>Producto</a>
+                <a href="#benefits" class="hover:text-primary transition" data-enlace>Beneficios</a>
+                <a href="#contact" class="hover:text-primary transition" data-enlace>Contacto</a>
             </div>
 
             <!-- CTA -->

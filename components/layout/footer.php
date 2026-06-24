@@ -1,10 +1,10 @@
     <footer class="w-full bg-[#2A2623] py-8">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between">
+            <div class="flex gap-5 flex-col lg:flex-row items-start lg:items-center justify-between">
                 <a href="/">
                     <img src="assets/images/Hunter-Pet-White-Logo.webp" alt="Logo Footer Hunter Pet" class="h-auto" width="178" height="100">
                 </a>
-                <div class="flex gap-20 xl:gap-48">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-20 xl:gap-48">
                     <a href="#" class="font-raleway font-semibold text-base text-white opacity-50">Nosotros</a>
                     <a href="#" class="font-raleway font-semibold text-base text-white opacity-50">Términos y condiciones</a>
                     <a href="#" class="font-raleway font-semibold text-base text-white opacity-50">Libro de reclamaciones</a>
@@ -65,7 +65,7 @@
                     </svg>
                 </a>
             </div>
-            <div class="flex items-center justify-between pt-4 border-t-[.5px] border-[#ffffff1a]">
+            <div class="flex flex-wrap gap-1 items-center justify-between pt-4 border-t-[.5px] border-[#ffffff1a]">
                 <span class="font-raleway font-normal text-sm text-white opacity-50">
                     © <?= date('Y') ?> Hunter Pet. All rights reserved.
                 </span>
@@ -76,379 +76,25 @@
         </div>
     </footer>
 
-    <script>
 
-        const form = document.querySelector("#formSend");
-
-        const button = document.querySelector("#submitBtn");
-
-
-        const fields = [
-
-            "type",
-            "document",
-            "phone",
-            "name",
-            "lastname",
-            "mail",
-            "checkbox"
-
-        ];
-
-
-        // Campos que el usuario ya interactuó
-        const touched = {};
-
-
-
-        function showError(field, message){
-
-
-            const input = document.querySelector(`#${field}`);
-
-            const error = document.querySelector(`#${field}Err`);
-
-
-
-            if(field !== "checkbox"){
-
-
-                input.classList.add(
-                    "border-red-500"
-                );
-
-
-                input.classList.remove(
-                    "border-[#E4E4E7]"
-                );
-
-
-            }
-
-
-            error.textContent = message;
-
-            error.classList.remove(
-                "hidden"
-            );
-
-
-        }
-
-
-        function removeError(field){
-
-
-            const input = document.querySelector(`#${field}`);
-
-            const error = document.querySelector(`#${field}Err`);
-
-
-
-            if(field !== "checkbox"){
-
-
-                input.classList.remove(
-                    "border-red-500"
-                );
-
-
-                input.classList.add(
-                    "border-[#E4E4E7]"
-                );
-
-
-            }
-
-
-
-            error.classList.add(
-                "hidden"
-            );
-
-
-        }
-
-
-
-        function validateField(field){
-
-
-            const input = document.querySelector(`#${field}`);
-
-
-
-            if(input.type === "checkbox"){
-
-
-                if(!input.checked){
-
-
-                    showError(
-                        field,
-                        "Debes aceptar los términos y condiciones"
-                    );
-
-
-                    return false;
-
-
-                }
-
-
-                removeError(field);
-
-                return true;
-
-
-            }
-
-
-
-
-            if(input.tagName === "SELECT"){
-
-
-                if(input.value === "0"){
-
-
-                    showError(
-                        field,
-                        "Selecciona una opción válida"
-                    );
-
-
-                    return false;
-
-
-                }
-
-
-            }
-
-
-
-            if(input.value.trim() === ""){
-
-
-                showError(
-                    field,
-                    "Este campo es obligatorio"
-                );
-
-
-                return false;
-
-
-            }
-
-
-
-            if(
-                input.minLength > 0 &&
-                input.value.length < input.minLength
-            ){
-
-
-                showError(
-                    field,
-                    `Ingresa mínimo ${input.minLength} caracteres`
-                );
-
-
-                return false;
-
-
-            }
-
-
-
-            if(input.type === "email" && !input.checkValidity()){
-
-
-                showError(
-                    field,
-                    "Ingresa un correo válido"
-                );
-
-
-                return false;
-
-
-            }
-
-
-
-            removeError(field);
-
-
-            return true;
-
-
-        }
-
-
-        function validateForm(){
-
-
-            let valid = true;
-
-
-            fields.forEach(field => {
-
-
-                const input = document.querySelector(`#${field}`);
-
-
-                const isValid = input.checkValidity();
-
-
-                if(field === "checkbox"){
-
-
-                    if(!input.checked){
-
-                        valid = false;
-
-                    }
-
-
-                }else{
-
-
-                    if(!isValid || input.value === "0"){
-
-                        valid = false;
-
-                    }
-
-                }
-
-
-            });
-
-
-
-            if(valid){
-
-
-                button.disabled = false;
-
-
-                button.classList.remove(
-                    "opacity-75",
-                    "cursor-not-allowed"
-                );
-
-
-                button.classList.add(
-                    "cursor-pointer"
-                );
-
-
-            }else{
-
-
-                button.disabled = true;
-
-
-                button.classList.add(
-                    "opacity-75",
-                    "cursor-not-allowed"
-                );
-
-
-            }
-
-
-        }
-
-
-        fields.forEach(field => {
-
-
-            const input = document.querySelector(`#${field}`);
-
-
-
-            // Cuando entra al campo
-
-            input.addEventListener(
-                "focus",
-                () => {
-
-                    touched[field] = true;
-
-                }
-            );
-
-
-
-            // Validar solo ese campo al salir
-
-            input.addEventListener(
-                "blur",
-                () => {
-
-
-                    touched[field] = true;
-
-
-                    validateField(field);
-
-
-                    validateForm();
-
-
-                }
-            );
-
-
-
-            // Mientras escribe solo limpia si ya lo tocó
-
-            input.addEventListener(
-                "input",
-                () => {
-
-
-                    if(touched[field]){
-
-
-                        validateField(field);
-
-
-                    }
-
-
-                    validateForm();
-
-
-                }
-            );
-
-
-
-            input.addEventListener(
-                "change",
-                () => {
-
-
-                    touched[field] = true;
-
-
-                    validateField(field);
-
-
-                    validateForm();
-
-
-                }
-            );
-
-
-        });
-
-    </script>
+    <dialog id="successMessageForm" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0 rounded-3xl bg-white p-6 shadow-lg text-4xl text-center w-150 backdrop:bg-black/70">
+        <!-- Icono de Check -->
+        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
+            <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+        </div>
+    
+        <!-- Título -->
+        <h3 id="messageTitle" class="text-xl font-semibold text-gray-900 mb-2"></h3>
+        
+        <!-- Descripción -->
+        <p id="messageText" class="text-base text-gray-500 mb-6"></p>
+        
+        <!-- Botón de cierre -->
+        <button commandfor="successMessageForm" command="close" class="cursor-pointer w-full inline-flex justify-center rounded-xl bg-[#DE193B] px-4 py-4 text-base font-semibold text-white shadow-sm focus:outline-none">
+            Entendido
+        </button>
+    </dialog> 
 </body>
 </html>

@@ -1,19 +1,19 @@
-<section class="w-full bg-white py-20 bg-[linear-gradient(180deg,rgba(255,255,255,1)_50%,rgba(255,241,242,.4)_100%)]" id="contact">
+<section class="w-full bg-white py-20 bg-[linear-gradient(180deg,rgba(255,255,255,1)_50%,rgba(255,241,242,.4)_100%)] scroll-mt-[92.43px]" id="contact">
     <div class="w-full max-w-7xl mx-auto px-4 flex flex-col items-center">
-        <div class="inline-flex items-center mx-auto gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl">
+        <div class="inline-flex items-center mx-auto gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl max-[1350px]:text-sm">
             Contáctanos
         </div>
-        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] leading-none"><span class="text-[#ED1C3F]">Protege</span> a tu mejor amigo <span class="text-[#ED1C3F]">desde hoy</span></h2>
-        <p class="text-[#52525C] mt-4 font-inter font-normal text-lg">
+        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] max-[1350px]:text-3xl leading-none"><span class="text-[#ED1C3F]">Protege</span> a tu mejor amigo <span class="text-[#ED1C3F]">desde hoy</span></h2>
+        <p class="text-[#52525C] mt-4 font-inter font-normal text-lg max-[1350px]:text-base">
             Déjanos tus datos y nos comunicaremos contigo.
         </p>
-        <form id="formSend" action="/api/send-mail.php" method="POST" class="max-w-[840px] bg-white grid grid-cols-3 gap-4 mt-7 px-9 py-10 border-1 border-[#F4F4F5] rounded-3xl shadow-[0_25px_50px_-12px_#ED1C3F33]">
+        <form id="formSend" action="send-mail.php" method="POST" class="max-w-[840px] bg-white grid grid-cols-1 sm:grid-cols-3 gap-4 mt-7 px-9 py-10 border-1 border-[#F4F4F5] rounded-3xl shadow-[0_25px_50px_-12px_#ED1C3F33]">
             <div class="flex flex-col gap-2">
                 <label for="type" class="font-inter font-medium text-sm text-[#3F3F47]">Tipo de documento*</label>
                 <select required name="type" id="type" class="form-valid appearance-none w-full p-4 rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none ">
                     <option value="0" selected default>Selecciona...</option>
-                    <option value="1">DNI</option>
-                    <option value="2">Pasaporte</option>
+                    <option value="DNI">DNI</option>
+                    <option value="PASAPORTE">Pasaporte</option>
                 </select>
                 <span id="typeErr" class="hidden text-xs text-red-500 font-inter"></span>
             </div> 
@@ -42,11 +42,11 @@
                 <input required minlength="1" maxlength="100" placeholder="tucorreo@ejemplo.com" type="email" name="mail" id="mail" class="form-valid w-full p-4 rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none " />
                 <span id="mailErr" class="hidden text-xs text-red-500 font-inter"></span>
             </div>   
-            <div class="flex flex-col gap-2 col-span-3">
+            <div class="flex flex-col gap-2 col-span-1 sm:col-span-3">
                 <label for="message" class="font-inter font-medium text-sm text-[#3F3F47]">Mensaje (opcional)</label>
                 <textarea placeholder="Cuéntanos sobre tu mascota..." name="message" id="message" class="w-full min-h-[120px] p-4 resize-none field-sizing-content rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none "></textarea>
             </div>
-            <div class="flex flex-col gap-2 col-span-3">
+            <div class="flex flex-col gap-2 col-span-1 sm:col-span-3">
                 <label class="flex items-center gap-3 cursor-pointer select-none">
                     <div class="relative">
                         <!-- Hidden native checkbox, marked as peer -->
@@ -70,7 +70,7 @@
                 </label>
                 <span id="termsErr" class="hidden text-xs text-red-500 font-inter"></span>
             </div>
-            <div class="flex items-center justify-center gap-2 col-span-3">
+            <div class="flex items-center justify-center gap-2 col-span-1 sm:col-span-3">
                 <button id="submitBtn" disabled type="submit" class="cursor-not-allowed opacity-75 flex items-center justify-center rounded-full gap-2 mt-4 w-[420px] p-5 bg-[#ED1C3F] font-raleway font-bold text-white transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <g clip-path="url(#clip0_2_359)">

@@ -1,5 +1,6 @@
 <?php
 
+header('Content-Type: application/json');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -9,13 +10,13 @@ require 'vendor/autoload.php';
 
 
 
-$type = $_POST['type'];
-$document = $_POST['document'];
-$phone = $_POST['phone'];
-$name = $_POST['name'];
-$lastname = $_POST['lastname'];
-$mail = $_POST['mail'];
-$message = $_POST['message'];
+$type = $_POST['type'] ?? '';
+$document = $_POST['document'] ?? '';
+$phone = $_POST['phone'] ?? '';
+$name = $_POST['name'] ?? '';
+$lastname = $_POST['lastname'] ?? '';
+$mail = $_POST['mail'] ?? '';
+$message = $_POST['message'] ?? '';
 
 
 
@@ -38,10 +39,10 @@ try {
     $phpmailer->SMTPAuth = true;
 
 
-    $phpmailer->Username = 'tu-correo@gmail.com';
+    $phpmailer->Username = 'morales.saldarriaga@gmail.com';
 
 
-    $phpmailer->Password = 'PASSWORD_DE_APLICACION';
+    $phpmailer->Password = 'eusjvolirvwbsxhg ';
 
 
     $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -55,7 +56,7 @@ try {
 
     $phpmailer->setFrom(
         'tu-correo@gmail.com',
-        'Landing Web'
+        'Hunter PET WEB'
     );
 
 
@@ -85,13 +86,13 @@ try {
 
 
     $phpmailer->Subject =
-    "Nueva solicitud desde Landing";
+    "Nueva solicitud de contacto desde WEB";
 
 
 
     $phpmailer->Body = "
 
-    <h2>Nueva solicitud</h2>
+    <h2>Datos del contacto</h2>
 
 
     <p>
@@ -136,10 +137,11 @@ try {
     $phpmailer->send();
 
 
-
-    header(
-        "Location: gracias.php"
-    );
+    echo json_encode([
+        "status" => "success",
+        "title" => "¡Todo listo! Tu mensaje se envió con éxito",
+        "message" => "Gracias por ponerte en contacto. Ya recibimos tu información y te responderemos más rápido de lo que imaginas."
+    ]);
 
 
     exit;
@@ -148,10 +150,13 @@ try {
 
 } catch(Exception $e){
 
+    echo json_encode([
+        "status" => "error",
+        "title" => "¡Upsssss hubo un error!",
+        "message" => "Tu mensaje no se pudo enviar. Por favor, inténtalo de nuevo más tarde."
+    ]);
 
-    echo "Error enviando correo: "
-    . $phpmailer->ErrorInfo;
-
+    exit;
 
 }
 

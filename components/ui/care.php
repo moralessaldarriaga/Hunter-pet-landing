@@ -1,15 +1,15 @@
-<section class="w-full bg-white py-20" id="care">
-    <div class="w-full max-w-[1280px] mx-auto px-4 flex justify-between">
-        <div class="w-full min-h-96 grid grid-cols-1 md:grid-cols-2 rounded-4xl shadow-[0_25px_50px_-12px_#ED1C3F33] overflow-hidden">
-            <div class="flex flex-col items-start gap-5 px-15 py-9 bg-[linear-gradient(135deg,#ED1C3F_0%,#EA1B3E_8.33%,#E61B3D_16.67%,#E31A3C_25%,#E0193B_33.33%,#DC193A_41.67%,#D91839_50%,#D11737_57.14%,#C81634_64.29%,#C01532_71.43%,#B81330_78.57%,#B0122D_85.71%,#A8112B_92.86%,#A01029_100%)]">
-                <div class="flex items-center gap-2 px-6 py-3 rounded-3xl bg-[rgb(255_255_255_/_15%)] text-white font-raleway font-bold text-xl">
+<section class="w-full bg-white py-0 sm:py-20 scroll-mt-[92.43px]" id="care">
+    <div class="w-full max-w-[1280px] mx-auto px-0 sm:px-4 flex justify-between">
+        <div class="w-full min-h-96 grid grid-cols-2 max-[920px]:grid-cols-1 sm:rounded-4xl shadow-[0_25px_50px_-12px_#ED1C3F33] overflow-hidden">
+            <div class="flex flex-col items-start gap-5 px-8 lg:px-15 py-9 bg-[linear-gradient(135deg,#ED1C3F_0%,#EA1B3E_8.33%,#E61B3D_16.67%,#E31A3C_25%,#E0193B_33.33%,#DC193A_41.67%,#D91839_50%,#D11737_57.14%,#C81634_64.29%,#C01532_71.43%,#B81330_78.57%,#B0122D_85.71%,#A8112B_92.86%,#A01029_100%)]">
+                <div class="flex items-center gap-2 px-6 py-3 rounded-3xl bg-[rgb(255_255_255_/_15%)] text-white font-raleway font-bold text-xl max-[1350px]:text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                         <path d="M22 14H18V10C18 9.46957 17.7893 8.96086 17.4142 8.58579C17.0391 8.21071 16.5304 8 16 8C15.4696 8 14.9609 8.21071 14.5858 8.58579C14.2107 8.96086 14 9.46957 14 10V14H10C9.46957 14 8.96086 14.2107 8.58579 14.5858C8.21071 14.9609 8 15.4696 8 16C8 16.5304 8.21071 17.0391 8.58579 17.4142C8.96086 17.7893 9.46957 18 10 18H14V22C14 22.5304 14.2107 23.0391 14.5858 23.4142C14.9609 23.7893 15.4696 24 16 24C16.5304 24 17.0391 23.7893 17.4142 23.4142C17.7893 23.0391 18 22.5304 18 22V18H22C22.5304 18 23.0391 17.7893 23.4142 17.4142C23.7893 17.0391 24 16.5304 24 16C24 15.4696 23.7893 14.9609 23.4142 14.5858C23.0391 14.2107 22.5304 14 22 14Z" fill="white"/>
                     </svg>
                     Cuidado 24/7
                 </div>
-                <h3 class="font-raleway font-extrabold text-5xl text-white">Porque con Hunter su bienestar <i>no es negociable</i></h3>
-                <p class="font-inter font-normal text-lg text-white">
+                <h3 class="font-raleway font-extrabold text-5xl max-[1350px]:text-3xl text-white">Porque con Hunter su bienestar <i>no es negociable</i></h3>
+                <p class="font-inter font-normal text-lg max-[1350px]:text-base text-white">
                     Con Hunter PET también obtendrás el servicio de asistencia que incluye:
                 </p>
                 <div class="flex flex-col gap-2">
@@ -22,7 +22,7 @@
                             <path d="M15.165 15.9709C16.2544 15.9709 17.552 15.5203 17.552 13.3765C17.552 11.2328 16.2544 10.7812 15.165 10.7812C14.0756 10.7812 12.7771 11.2319 12.7771 13.3765C12.7771 15.5211 14.0756 15.9709 15.165 15.9709ZM15.165 12.5312C15.6288 12.5312 15.802 12.5312 15.802 13.3765C15.802 14.2218 15.6288 14.2209 15.165 14.2209C14.7013 14.2209 14.5271 14.2209 14.5271 13.3765C14.5271 12.5321 14.7004 12.5312 15.165 12.5312Z" fill="white"/>
                             <path d="M18 16.4529C14.9322 16.4529 12.8707 18.8828 12.8707 22.4991C12.8707 23.7145 13.1805 24.509 13.8192 24.929C14.7616 25.5494 15.9455 25.0384 16.8957 24.628C17.2729 24.4644 17.79 24.2421 18 24.2421C18.21 24.2421 18.7332 24.4513 19.1042 24.628C21.1272 25.5958 21.8649 25.1364 22.1807 24.929C22.8186 24.5099 23.1292 23.7145 23.1292 22.4991C23.1292 18.8828 21.0677 16.4529 18 16.4529ZM21.2279 23.4616C21.0056 23.5404 20.1892 23.1904 19.7981 23.0215C19.1672 22.7494 18.5714 22.4921 18 22.4921C17.4286 22.4921 16.8327 22.7494 16.2019 23.0215C15.8099 23.1904 14.9917 23.543 14.787 23.4713C14.7852 23.4704 14.6207 23.2866 14.6207 22.4991C14.6207 19.8496 15.9157 18.2029 18 18.2029C20.0842 18.2029 21.3792 19.8488 21.3792 22.4991C21.3792 23.2674 21.2226 23.4608 21.2279 23.4616Z" fill="white"/>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Orientación veterinaria 24/7</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Orientación veterinaria 24/7</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -36,7 +36,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Traslado por accidente/enfermedad</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Traslado por accidente/enfermedad</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -50,7 +50,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Consultas en red Emergencias: accidentes/enfermedades</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Consultas en red Emergencias: accidentes/enfermedades</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -64,7 +64,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Exámenes de laboratorio e imagen</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Exámenes de laboratorio e imagen</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -78,7 +78,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Medicación en emergencia</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Medicación en emergencia</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -93,7 +93,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Desparasitación anual</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Desparasitación anual</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -107,7 +107,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">Consulta veterinaria virtual</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">Consulta veterinaria virtual</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <svg class="w-9 h-9 shrink-0" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -122,11 +122,11 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <p class="font-inter font-normal text-base text-white">... y mucho más</p>
+                        <p class="font-inter font-normal text-base max-[1350px]:text-sm text-white">... y mucho más</p>
                     </div>
                 </div>
             </div>
-            <div class="relative bg-silver-500">
+            <div class="relative bg-silver-500 min-h-112.5 sm:h-auto">
                 <img src="assets/images/Care-dogger.webp" alt="Care dogger section" fetchpriority="high" loading="lazy" decoding="async" class="object-cover absolute inset-0 w-full h-full">
                 <div class="absolute right-6 bottom-14 bg-white rounded-2xl p-4 flex items-center gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">

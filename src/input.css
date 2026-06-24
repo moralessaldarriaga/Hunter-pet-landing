@@ -5,3 +5,23 @@
     --font-sans: "Inter", sans-serif;
     --font-raleway: "Raleway", sans-serif;
 }
+
+@keyframes header-shadow {
+
+    from {
+        box-shadow: 0 0 0 transparent;
+    }
+
+    to {
+        box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    }
+
+}
+
+
+.header-scroll-shadow {
+
+    animation: header-shadow linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0 92.43px;
+}
