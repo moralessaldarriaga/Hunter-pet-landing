@@ -1,13 +1,16 @@
 <?php
 
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
 header('Content-Type: application/json');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-
-require 'vendor/autoload.php';
-
+require __DIR__ . '/config.php';
+require __DIR__ . '/vendor/autoload.php';
 
 
 $type = $_POST['type'] ?? '';
@@ -32,31 +35,22 @@ try {
 
     $phpmailer->isSMTP();
 
+    // $phpmailer->SMTPDebug = 2;
+    // $phpmailer->Debugoutput = 'html';
 
-    $phpmailer->Host = 'smtp.gmail.com';
-
-
+    $phpmailer->Host = SMTP_HOST;
     $phpmailer->SMTPAuth = true;
-
-
-    $phpmailer->Username = 'morales.saldarriaga@gmail.com';
-
-
-    $phpmailer->Password = 'eusjvolirvwbsxhg ';
-
-
+    $phpmailer->Username = SMTP_USER;
+    $phpmailer->Password = SMTP_PASS;
     $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-
-
-    $phpmailer->Port = 587;
-
-
+    $phpmailer->Port = SMTP_PORT;
+    $phpmailer->CharSet = 'UTF-8';
 
     // Remitente
 
     $phpmailer->setFrom(
-        'tu-correo@gmail.com',
-        'Hunter PET WEB'
+        'atenciondigital@hunter.com.pe',
+        'Hunter PET'
     );
 
 
@@ -64,7 +58,7 @@ try {
     // Destino
 
     $phpmailer->addAddress(
-        'correo-recibe@gmail.com',
+        'atenciondigital@hunter.com.pe',
         'Ventas'
     );
 
@@ -86,7 +80,7 @@ try {
 
 
     $phpmailer->Subject =
-    "Nueva solicitud de contacto desde WEB";
+    "Nuevo registro en el formulario de Hunter Pet";
 
 
 
@@ -139,8 +133,8 @@ try {
 
     echo json_encode([
         "status" => "success",
-        "title" => "¡Todo listo! Tu mensaje se envió con éxito",
-        "message" => "Gracias por ponerte en contacto. Ya recibimos tu información y te responderemos más rápido de lo que imaginas."
+        "title" => "¡Tu mensaje ha sido enviado con éxito!",
+        "message" => "Gracias por escribirnos, pronto un ejecutivo te contactará."
     ]);
 
 
@@ -155,6 +149,13 @@ try {
         "title" => "¡Upsssss hubo un error!",
         "message" => "Tu mensaje no se pudo enviar. Por favor, inténtalo de nuevo más tarde."
     ]);
+
+    // echo json_encode([
+    //     "status" => "error",
+    //     "title" => "Error SMTP",
+    //     "message" => $phpmailer->ErrorInfo,
+    //     "exception" => $e->getMessage()
+    // ]);
 
     exit;
 

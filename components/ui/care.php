@@ -1,6 +1,6 @@
-<section class="w-full bg-white py-0 sm:py-20 scroll-mt-[92.43px]" id="care">
-    <div class="w-full max-w-[1280px] mx-auto px-0 sm:px-4 flex justify-between">
-        <div class="w-full min-h-96 grid grid-cols-2 max-[920px]:grid-cols-1 sm:rounded-4xl shadow-[0_25px_50px_-12px_#ED1C3F33] overflow-hidden">
+<section class="w-full bg-white py-0 sm:py-20 scroll-mt-[78.55px] sm:scroll-mt-[92.43px]" id="care">
+    <div class="w-full max-w-7xl mx-auto px-0 sm:px-8 xl:px-4 flex justify-between">
+        <div class="timeline-view animate-fade-in-up animate-range-[entry_15%_entry_60%] w-full min-h-96 grid grid-cols-2 max-[920px]:grid-cols-1 sm:rounded-4xl shadow-[0_25px_50px_-12px_#ED1C3F33] overflow-hidden">
             <div class="flex flex-col items-start gap-5 px-8 lg:px-15 py-9 bg-[linear-gradient(135deg,#ED1C3F_0%,#EA1B3E_8.33%,#E61B3D_16.67%,#E31A3C_25%,#E0193B_33.33%,#DC193A_41.67%,#D91839_50%,#D11737_57.14%,#C81634_64.29%,#C01532_71.43%,#B81330_78.57%,#B0122D_85.71%,#A8112B_92.86%,#A01029_100%)]">
                 <div class="flex items-center gap-2 px-6 py-3 rounded-3xl bg-[rgb(255_255_255_/_15%)] text-white font-raleway font-bold text-xl max-[1350px]:text-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">

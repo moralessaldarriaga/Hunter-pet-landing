@@ -1,13 +1,13 @@
-<section class="w-full bg-white py-20 bg-[linear-gradient(180deg,rgba(255,255,255,1)_50%,rgba(255,241,242,.4)_100%)] scroll-mt-[92.43px]" id="contact">
-    <div class="w-full max-w-7xl mx-auto px-4 flex flex-col items-center">
+<section class="w-full bg-white py-20 bg-[linear-gradient(180deg,rgba(255,255,255,1)_50%,rgba(255,241,242,.4)_100%)] scroll-mt-[78.55px] sm:scroll-mt-[92.43px]" id="contact">
+    <div class="timeline-view animate-fade-in-up animate-range-[entry_15%_entry_60%] w-full max-w-7xl mx-auto px-8 xl:px-4 flex flex-col items-center">
         <div class="inline-flex items-center mx-auto gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl max-[1350px]:text-sm">
             Contáctanos
         </div>
-        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] max-[1350px]:text-3xl leading-none"><span class="text-[#ED1C3F]">Protege</span> a tu mejor amigo <span class="text-[#ED1C3F]">desde hoy</span></h2>
-        <p class="text-[#52525C] mt-4 font-inter font-normal text-lg max-[1350px]:text-base">
+        <h2 class="text-[#18181B] mt-5 font-raleway font-extrabold text-[40px] max-[1350px]:text-3xl leading-none text-center"><span class="text-[#ED1C3F]">Protege</span> a tu mejor<br> amigo <span class="text-[#ED1C3F]">desde hoy</span></h2>
+        <p class="text-[#52525C] mt-4 font-inter font-normal text-lg max-[1350px]:text-base text-center">
             Déjanos tus datos y nos comunicaremos contigo.
         </p>
-        <form id="formSend" action="send-mail.php" method="POST" class="max-w-[840px] bg-white grid grid-cols-1 sm:grid-cols-3 gap-4 mt-7 px-9 py-10 border-1 border-[#F4F4F5] rounded-3xl shadow-[0_25px_50px_-12px_#ED1C3F33]">
+        <form id="formSend" action="send-mail.php" method="POST" class="max-w-[840px] bg-white grid grid-cols-1 sm:grid-cols-3 gap-4 mt-7 px-5 py-5 sm:px-9 sm:py-10 border-1 border-[#F4F4F5] rounded-3xl shadow-[0_25px_50px_-12px_#ED1C3F33]">
             <div class="flex flex-col gap-2">
                 <label for="type" class="font-inter font-medium text-sm text-[#3F3F47]">Tipo de documento*</label>
                 <select required name="type" id="type" class="form-valid appearance-none w-full p-4 rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none ">
@@ -24,7 +24,7 @@
             </div>  
             <div class="flex flex-col gap-2">
                 <label for="phone" class="font-inter font-medium text-sm text-[#3F3F47]">Número de celular*</label>
-                <input required minlength="9" maxlength="9" placeholder="+51 ..." type="tel" name="phone" id="phone" class="form-valid w-full p-4 rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none " />
+                <input required minlength="9" maxlength="9" placeholder="Ingresa tu número de celular" type="tel" name="phone" id="phone" class="form-valid w-full p-4 rounded-2xl border-1 border-[#E4E4E7] bg-white text-[#0A0A0A80] text-base font-inter focus:outline-none " />
                 <span id="phoneErr" class="hidden text-xs text-red-500 font-inter"></span>
             </div> 
             <div class="flex flex-col gap-2">

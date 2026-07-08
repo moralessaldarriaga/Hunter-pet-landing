@@ -1,9 +1,13 @@
-<section class="w-full bg-white pt-20 pb-0 scroll-mt-[92.43px]" id="product">
-    <div class="w-full max-w-7xl mx-auto px-4 flex flex-col-reverse lg:flex-row justify-between">
-        <div class="shrink-0 mx-auto">
+<section class="w-full bg-white pt-20 pb-0 scroll-mt-[78.55px] sm:scroll-mt-[92.43px]" id="product">
+    <!-- <div class="w-75 h-75 bg-[rgb(237,28,63,10%)] absolute top-0 right-0 [clip-path:circle(75%_at_75%_25%)]"></div>
+    <div class="w-75 h-75 bg-[rgb(24,24,27,10%)] absolute bottom-0 left-0 [clip-path:circle(75%_at_25%_75%)]"></div> -->
+    <div class="w-full max-w-7xl mx-auto px-8 xl:px-4 flex flex-col-reverse lg:flex-row justify-between relative">
+        <div class="hidden md:flex w-75 h-75 bg-[rgb(237,28,63,10%)] absolute -top-20 -right-20 [clip-path:circle(75%_at_75%_25%)] [mask-image:linear-gradient(to_right,black_0%,black_75%,rgba(0,0,0,0.8)_85%,transparent_100%)]"></div>
+        <div class="hidden md:flex w-75 h-75 bg-[rgb(24,24,27,10%)] absolute bottom-0 -left-20 [clip-path:circle(75%_at_25%_75%)] [mask-image:linear-gradient(to_left,black_0%,black_75%,rgba(0,0,0,0.8)_85%,transparent_100%)]"></div>
+        <div class="timeline-view animate-fade-in-up animate-range-[entry_15%_entry_60%] shrink-0 mx-auto">
             <img class="mask-[radial-gradient(ellipse_120%_100%_at_top,black_86%,transparent_100%)]" src="assets/images/mockup.png" alt="Dogger Section Hero" fetchpriority="auto" loading="lazy" decoding="async" class="h-auto" width="539" height="709">
         </div>
-        <div class="max-w-157.5 mx-auto flex flex-col items-start gap-4.5">
+        <div class="timeline-view animate-fade-in-up animate-range-[entry_20%_entry_60%] max-w-157.5 mx-auto flex flex-col items-start gap-4.5">
             <div class="flex items-center gap-2 px-6 py-3 rounded-3xl bg-[rgb(237_28_63_/_10%)] text-[#ED1C3F] font-raleway font-bold text-xl max-[1350px]:text-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M19 14C20.49 12.54 22 10.79 22 8.5C22 7.04131 21.4205 5.64236 20.3891 4.61091C19.3576 3.57946 17.9587 3 16.5 3C14.74 3 13.5 3.5 12 5C10.5 3.5 9.26 3 7.5 3C6.04131 3 4.64236 3.57946 3.61091 4.61091C2.57946 5.64236 2 7.04131 2 8.5C2 10.8 3.5 12.55 5 14L12 21L19 14Z" fill="#ED1C3F" stroke="#ED1C3F" stroke-width="1.88791" stroke-linecap="round" stroke-linejoin="round"/>
